@@ -78,7 +78,8 @@ public class Pinsetter {
 	private Random rnd;
 	private Vector subscribers;
 
-	private boolean[] pins; 
+	//private boolean[] pins;
+	private Pin[] pins;
 			/* 0-9 of state of pine, true for standing, 
 			false for knocked down
 
@@ -114,7 +115,11 @@ public class Pinsetter {
 	 * @return Pinsetter object
 	 */
 	public Pinsetter() {
-		pins = new boolean[10];
+		//pins = new boolean[10];
+		pins = new Pin[10];
+		for(int i=0; i<10;i++){
+			pins[i] = new UpPin();
+		}
 		rnd = new Random();
 		subscribers = new Vector();
 		foul = false;
@@ -133,15 +138,17 @@ public class Pinsetter {
 		foul = false;
 		double skill = rnd.nextDouble();
 		for (int i=0; i <= 9; i++) {
-			if (pins[i]) {
+			//if pins are up
+			if (pins[i].isUp()) {
 				double pinluck = rnd.nextDouble();
 				if (pinluck <= .04){ 
 					foul = true;
 				}
+				//knock down
 				if ( ((skill + pinluck)/2.0 * 1.2) > .5 ){
-					pins[i] = false;
+					pins[i] = pins[i].knockDown();
 				} 
-				if (!pins[i]) {		// this pin just knocked down
+				if (!pins[i].isUp()) {		// this pin just knocked down
 					count++;
 				}
 			}
@@ -184,7 +191,7 @@ public class Pinsetter {
 	 */
 	public void resetPins() {
 		for (int i=0; i <= 9; i++) {
-			pins[i] = true;
+			pins[i] = pins[i].setUp();
 		}
 	}		
 

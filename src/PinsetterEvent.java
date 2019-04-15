@@ -14,7 +14,7 @@
 
 public class PinsetterEvent {
 
-	private boolean[] pinsStillStanding;
+	private Pin[] pinsStillStanding;
 	private boolean foulCommited;
 	private int throwNumber;
 	private int pinsDownThisThrow;
@@ -26,8 +26,8 @@ public class PinsetterEvent {
 	 * @pre none
 	 * @post the object has been initialized
 	 */
-	public PinsetterEvent(boolean[] ps, boolean foul, int tn, int pinsDownThisThrow) {
-		pinsStillStanding = new boolean[10];
+	public PinsetterEvent(Pin[] ps, boolean foul, int tn, int pinsDownThisThrow) {
+		pinsStillStanding = new Pin[10];
 
 		for (int i=0; i <= 9; i++) {
 			pinsStillStanding[i] = ps[i];
@@ -45,7 +45,7 @@ public class PinsetterEvent {
 	 * @return true if pin [i] has been knocked down
 	 */
 	public boolean pinKnockedDown(int i) {
-		return !pinsStillStanding[i];
+		return !pinsStillStanding[i].isUp();
 	}
 	
 	/** pinsDownOnThisThrow()
