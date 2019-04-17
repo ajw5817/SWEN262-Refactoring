@@ -38,6 +38,19 @@ public class Scorecard {
     return frame == 10 && !Bowlers.hasNext();
   }
 
+  public void reset(){
+    scorecard.clear();
+    frame = 0;
+    Bowlers = party.getMembers().iterator();
+    while(Bowlers.hasNext()){
+      Bowler b = (Bowler)Bowlers.next();
+      scorecard.put(b.getFullName(), new Scores(b.getFullName()));
+    }
+    nextFrame();
+    current = (Bowler)Bowlers.next();
+
+  }
+
   public void addScore(int score){
     Scores s = scorecard.get(current.getFullName());
     s.addScore(frame, score);
