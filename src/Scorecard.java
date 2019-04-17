@@ -28,6 +28,15 @@ public class Scorecard {
   public int getCurrentBowlerScore(){
     return scorecard.get(current.getFullName()).getTotalScore();
   }
+  public String getCurrentBowler(){
+    return current.getFullName();
+  }
+  public int getCurrentFrame(){
+    return frame;
+  }
+  public boolean isGameOver(){
+    return frame == 10 && !Bowlers.hasNext();
+  }
 
   public void addScore(int score){
     Scores s = scorecard.get(current.getFullName());

@@ -28,15 +28,17 @@ import java.util.HashMap;
 public class LaneEvent {
 
 	private Party p;
-	int frame;
-	int ball;
-	Bowler bowler;
-	int[][] cumulScore;
-	HashMap score;
-	int index;
-	int frameNum;
-	int[] curScores;
-	boolean mechProb;
+	private int frame;
+	private int ball;
+	private Bowler bowler;
+	private int[][] cumulScore;
+	private HashMap score;
+	private int index;
+	private int frameNum;
+	private int[] curScores;
+	private boolean mechProb;
+
+	private Scorecard scorecard;
 	
 	public LaneEvent( Party pty, int theIndex, Bowler theBowler, int[][] theCumulScore, HashMap theScore, int theFrameNum, int[] theCurScores, int theBall, boolean mechProblem) {
 		p = pty;
@@ -48,6 +50,17 @@ public class LaneEvent {
 		frameNum = theFrameNum;
 		ball = theBall;	
 		mechProb = mechProblem;
+	}
+
+	public LaneEvent (Party party, int index, Bowler bowler, Scorecard scorecard, int frameNum, int ball, boolean mechProblem) {
+		this.p = party;
+		this.index = index;
+		this.bowler = bowler;
+		this.scorecard = scorecard;
+		this.frameNum = frameNum;
+		this.ball = ball;
+		this.mechProb = mechProblem;
+
 	}
 	
 	public boolean isMechanicalProblem() {
