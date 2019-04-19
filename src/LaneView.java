@@ -7,6 +7,7 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 import java.util.*;
+import Scorecard.Frame;
 
 public class LaneView implements LaneObserver, ActionListener {
 
@@ -162,17 +163,19 @@ public class LaneView implements LaneObserver, ActionListener {
 
 			//int[][] lescores = le.getCumulScore();
 			Scorecard scorecard = le.getScorecard();
+			String[][] scorecardAssembled = scorecard.assembleFrames();
 			for (int k = 0; k < numBowlers; k++) {
-				for (int i = 0; i <= le.getFrameNum() - 1; i++) {
+				for (int i = 1; i <= le.getFrameNum(); i++) {
 					/*if (lescores[k][i] != 0)
 						scoreLabel[k][i].setText(
 							(new Integer(lescores[k][i])).toString());
 				}*/
-					if (scorecard.getBowlerScoreForFrame((Bowler)bowlers.get(k), i) != 0) {
-						scoreLabel[k][i].setText(Integer.toString(scorecard.getBowlerScoreForFrame((Bowler)bowlers.get(k), i)));
+					if (scorecard.getBowlerScoreCum((Bowler)bowlers.get(k),i) != 0) {
+						scoreLabel[k][i].setText(Integer.toString(scorecard.getBowlerScoreCum((Bowler)bowlers.get(k),i)));
 					}
 				}
 				for (int i = 0; i < 21; i++) {
+					/*
 					if (scorecard.getBowlerScoreForFrame((Bowler)bowlers.get(k), i)
 						!= -1)
 						if (scorecard.getBowlerScoreForFrame((Bowler)bowlers.get(k), i)
@@ -192,6 +195,27 @@ public class LaneView implements LaneObserver, ActionListener {
 						} else
 							ballLabel[k][i].setText(
 								(Integer.toString(scorecard.getBowlerScoreForFrame((Bowler)bowlers.get(k), i))));
+								*/
+					/*
+					Frame score = scorecard.getPlayerFrame((Bowler)bowlers.get(k), i);
+					if(score.getFirstShot() == -2){
+						ballLabel[k][j].setText("F");
+						ballLabel[k][j+1].setText("F");
+					}
+					else if(score.getFirstShot() == 10){
+						ballLabel[k][j].setText("X");
+					}
+					else if(score.getfirstTwo() == 10){
+						ballLabel[k][j].setText(Integer.toString(score.getFirstShot()));
+						ballLabel[k][j+1].setText("/");
+					}
+					else{
+						ballLabel[k][j].setText(Integer.toString(score.getFirstShot()));
+						ballLabel[k][j+1].setText(Integer.toString(score.getfirstTwo()-score.getFirstShot()));
+					}
+					j+=2;
+					*/
+					ballLabel[k][i].setText(scorecardAssembled[k][i]);
 				}
 			}
 

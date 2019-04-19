@@ -3,6 +3,7 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Vector;
 import Scorecard.Scores;
+import Scorecard.Frame;
 
 
 public class Scorecard {
@@ -29,6 +30,12 @@ public class Scorecard {
   public int getBowlerScoreForFrame(Bowler bowler, int frame) {
     return scorecard.get(bowler.getFullName()).getFrameScore(frame);
   }
+  public int getBowlerScoreCum(Bowler bowler, int frame){
+    return scorecard.get(bowler.getFullName()).getCumScore(frame);
+  }
+  public int getBowlerScore(Bowler bowler){
+    return scorecard.get(bowler.getFullName()).getTotalScore();
+  }
   public int getCurrentBowlerScore(){
     return scorecard.get(current.getFullName()).getTotalScore();
   }
@@ -43,6 +50,8 @@ public class Scorecard {
   public int getCurrentFrame(){
     return frame;
   }
+
+  public Frame getPlayerFrame(Bowler bowler, int frame){return scorecard.get(bowler.getFullName()).getFrame(frame);}
   public boolean isGameOver(){
     return frame == 10 && !Bowlers.hasNext();
   }
@@ -105,5 +114,16 @@ public class Scorecard {
       i ++;
     }
     return name;
+  }
+
+  public String[][] assembleFrames(){
+    String[][] frames = new String[party.getMembers().size()][21];
+    int i = 0;
+    for(Object b: party.getMembers()){
+      Bowler bowler = (Bowler)b;
+      frames[i] = scorecard.get(bowler.getFullName()).assembleFrame();
+      i+=1;
+    }
+    return frames;
   }
 }

@@ -49,4 +49,8 @@ public class Frame {
   public FrameState getState(){
     return state;
   }
+
+  public int getFrameNumber() {
+    return frameNumber;
+  }
 }

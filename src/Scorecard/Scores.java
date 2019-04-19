@@ -14,7 +14,7 @@ public class Scores {
   }
 
   public void addScore(int frame, int score){
-    frames.get(frame).addScore(score);
+    frames.get(frame-1).addScore(score);
   }
 
   public int getFrameScore(int frame){
@@ -52,6 +52,29 @@ public class Scores {
     }
     return score;
   }
+  public int getCumScore(int frame){
+    int i = 1;
+    int score = 0;
+    ScoreStrategy scoreStrategy;
+    for(Frame f: frames){
+      if(i == frame){
+        break;
+      }
+      FrameState fs = f.getState();
+      if(fs.getClass() == new Strike().getClass()){
+        scoreStrategy = new ScoreStrike();
+      }
+      else if(fs.getClass() == new Spare().getClass()){
+        scoreStrategy = new ScoreSpare();
+      }
+      else{
+        scoreStrategy = new Scored();
+      }
+      score += scoreStrategy.getScore(frames, i);
+      i++;
+    }
+    return score;
+  }
 
   public int thruFrame(){
     int thru = 0;
@@ -61,5 +84,38 @@ public class Scores {
       }
     }
     return thru;
+  }
+
+  public Frame getFrame(int frame){
+    return frames.get(frame);
+  }
+
+  public String[] assembleFrame(){
+    String[] framed = new String[21];
+    int j = 0;
+    for(Frame f: frames){
+      if(f.getState().getClass() == new Strike().getClass()){
+        framed[j] = "X";
+        framed[j+1] = " ";
+      }
+      else if(f.getState().getClass() == new Spare().getClass()){
+        framed[j] = Integer.toString(f.getFirstShot());
+        framed[j+1] = "/";
+      }
+      else if(f.getState().getClass() == new FrameOneToNineSecondShot().getClass()){
+        framed[j] = Integer.toString(f.getFirstShot());
+        framed[j+1] = " ";
+      }
+      else if(f.getState().getClass() == new Frameended().getClass()){
+        framed[j] = Integer.toString(f.getFirstShot());
+        framed[j+1] = Integer.toString(f.getfirstTwo() - f.getFirstShot());
+      }
+      else{
+        framed[j] = " ";
+        framed[j+1] = " ";
+      }
+      j += 2;
+    }
+    return framed;
   }
 }
