@@ -143,14 +143,14 @@ public class Lane extends Thread implements PinsetterObserver {
 
 	private boolean partyAssigned;
 	private boolean gameFinished;
-	private Iterator bowlerIterator;
+	//private Iterator bowlerIterator;
 	private int ball;
-	private int bowlIndex;
+	//private int bowlIndex;
 	private int frameNumber;
 	private boolean tenthFrameStrike;
 
 	//private int[] curScores;
-	//private int[][] cumulScores;
+	private int[][] cumulScores;
 	private boolean canThrowAgain;
 	
 	private int[][] finalScores;
@@ -199,8 +199,8 @@ public class Lane extends Thread implements PinsetterObserver {
 				}
 
 
-				if (bowlerIterator.hasNext()) {
-					currentThrower = (Bowler)bowlerIterator.next();
+				if (scorecard.hasNext()) {
+					currentThrower = scorecard.getCurrentBowler();
 
 					canThrowAgain = true;
 					tenthFrameStrike = false;
@@ -210,7 +210,7 @@ public class Lane extends Thread implements PinsetterObserver {
 						ball++;
 					}
 					
-					if (frameNumber == 9){
+					/*if (frameNumber == 9){
 						//finalScores[bowlIndex][gameNumber] = cumulScores[bowlIndex][9];
                         finalScores[bowlIndex][gameNumber] = scorecard.getCurrentBowlerScore();
 						try{
@@ -218,16 +218,18 @@ public class Lane extends Thread implements PinsetterObserver {
 						String dateString = "" + date.getHours() + ":" + date.getMinutes() + " " + date.getMonth() + "/" + date.getDay() + "/" + (date.getYear() + 1900);
 						ScoreHistoryFile.addScore(currentThrower.getNick(), dateString, new Integer(finalScores[bowlIndex][gameNumber]).toString());
 						} catch (Exception e) {System.err.println("Exception in addScore. "+ e );} 
-					}
+					}*/
 
 					
 					setter.reset();
-					bowlIndex++;
+					scorecard.update();
+					//bowlIndex++;
 					
 				} else {
-					frameNumber++;
-					resetBowlerIterator();
-					bowlIndex = 0;
+					//frameNumber++;
+					//resetBowlerIterator();
+					scorecard.update();
+					//bowlIndex = 0;
 					if (frameNumber > 9) {
 						gameFinished = true;
 						gameNumber++;
@@ -244,8 +246,9 @@ public class Lane extends Thread implements PinsetterObserver {
 				
 				// TODO: send record of scores to control desk
 				if (result == 1) {					// yes, want to play again
-					resetScores();
-					resetBowlerIterator();
+					/*resetScores();
+					resetBowlerIterator();*/
+					scorecard.reset();
 					
 				} else if (result == 2) {// no, dont want to play another game
 					Vector printVector;	
@@ -254,7 +257,8 @@ public class Lane extends Thread implements PinsetterObserver {
 					partyAssigned = false;
 					Iterator scoreIt = party.getMembers().iterator();
 					party = null;
-					partyAssigned = false;
+					//partyAssigned = false;
+
 					
 					publish(lanePublish());
 					
@@ -337,9 +341,9 @@ public class Lane extends Thread implements PinsetterObserver {
 	 * @pre the party as been assigned
 	 * @post the iterator points to the first bowler in the party
 	 */
-	private void resetBowlerIterator() {
+	/*private void resetBowlerIterator() {
 		bowlerIterator = (party.getMembers()).iterator();
-	}
+	}*/
 
 	/** resetScores()
 	 * 
@@ -376,7 +380,7 @@ public class Lane extends Thread implements PinsetterObserver {
 	 */
 	public void assignParty( Party theParty ) {
 		party = theParty;
-		resetBowlerIterator();
+		//resetBowlerIterator();
 		partyAssigned = true;
 
 		//curScores = new int[party.getMembers().size()];
@@ -421,7 +425,7 @@ public class Lane extends Thread implements PinsetterObserver {
 	 */
 	private LaneEvent lanePublish(  ) {
 		//LaneEvent laneEvent = new LaneEvent(party, bowlIndex, currentThrower, cumulScores, scores, frameNumber+1, curScores, ball, gameIsHalted);
-		return new LaneEvent(party, bowlIndex, currentThrower, scorecard, frameNumber+1, ball, gameIsHalted);
+		return new LaneEvent(party, currentThrower, scorecard, ball, gameIsHalted);
 	}
 
 	/** getScore()
@@ -561,7 +565,7 @@ public class Lane extends Thread implements PinsetterObserver {
 	 * 
 	 * Method that will add a subscriber
 	 * 
-	 * @param subscribe	Observer that is to be added
+	 * @param	adding that is to be added
 	 */
 
 	public void subscribe( LaneObserver adding ) {

@@ -17,6 +17,21 @@ public class Scores {
     frames.get(frame-1).addScore(score);
   }
 
+  public int getFrameScore(int frame){
+    ScoreStrategy scoreStrategy;
+    FrameState fs = frames.get(frame-1).getState();
+    if(fs.getClass() == new Strike().getClass()){
+      scoreStrategy = new ScoreStrike();
+    }
+    else if(fs.getClass() == new Spare().getClass()){
+      scoreStrategy = new ScoreSpare();
+    }
+    else{
+      scoreStrategy = new Scored();
+    }
+    return scoreStrategy.getScore(frames, frame-1);
+  }
+
   public int getTotalScore(){
     int i = 1;
     int score = 0;
