@@ -53,7 +53,7 @@ public class Scores {
     return score;
   }
   public int getCumScore(int frame){
-    int i = 1;
+    int i = 0;
     int score = 0;
     ScoreStrategy scoreStrategy;
     for(Frame f: frames){
@@ -70,7 +70,7 @@ public class Scores {
       else{
         scoreStrategy = new Scored();
       }
-      score += scoreStrategy.getScore(frames, i);
+      score += scoreStrategy.getScore(frames, i+1);
       i++;
     }
     return score;
@@ -115,6 +115,30 @@ public class Scores {
         framed[j+1] = " ";
       }
       j += 2;
+    }
+    if(frames.get(9).getState().getClass() != new FrameTenFirstShot().getClass()){
+      Frame f = frames.get(9);
+      if(f.getFirstShot() == 10){
+        framed[18] = "X";
+      }
+      if(f.getfirstTwo()-f.getFirstShot() == 10){
+        framed[19] = "X";
+      }
+      if(f.getfirstTwo() == 10){
+        framed[19] = "/";
+      }
+      if(f.getFrameScore()-f.getfirstTwo() == 10){
+        framed[20] = "X";
+      }
+      else if(f.getState().getClass() == new Frameended().getClass() && f.getFrameScore()-f.getfirstTwo() == 0){
+
+      }
+      else if(f.getState().getClass() == new Frameended().getClass()){
+        framed[20] = Integer.toString(f.getFrameScore()-f.getfirstTwo());
+      }
+      else{
+        framed[18] = Integer.toString(f.getFirstShot());
+      }
     }
     return framed;
   }

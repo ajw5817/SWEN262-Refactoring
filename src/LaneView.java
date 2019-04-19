@@ -165,14 +165,8 @@ public class LaneView implements LaneObserver, ActionListener {
 			Scorecard scorecard = le.getScorecard();
 			String[][] scorecardAssembled = scorecard.assembleFrames();
 			for (int k = 0; k < numBowlers; k++) {
-				for (int i = 1; i <= le.getFrameNum(); i++) {
-					/*if (lescores[k][i] != 0)
-						scoreLabel[k][i].setText(
-							(new Integer(lescores[k][i])).toString());
-				}*/
-					if (scorecard.getBowlerScoreCum((Bowler)bowlers.get(k),i) != 0) {
-						scoreLabel[k][i].setText(Integer.toString(scorecard.getBowlerScoreCum((Bowler)bowlers.get(k),i)));
-					}
+				for (int i = 0; i <= le.getFrameNum()-1; i++) {
+						scoreLabel[k][i].setText(Integer.toString(scorecard.getBowlerScoreCum((Bowler)bowlers.get(k), i +1)));
 				}
 				for (int i = 0; i < 21; i++) {
 					/*

@@ -126,4 +126,18 @@ public class Scorecard {
     }
     return frames;
   }
+
+  public String[][] assembleCum(){
+    String[][]cum = new String[party.getMembers().size()][10];
+    int i = 0;
+    for(Object b: party.getMembers()){
+      Bowler bowler = (Bowler)b;
+      Scores bs = scorecard.get(bowler.getFullName());
+      for(int j = 1; j <= 10; j++) {
+        cum[i][j] = Integer.toString(bs.getCumScore(j));
+      }
+      i+=1;
+    }
+    return cum;
+  }
 }
