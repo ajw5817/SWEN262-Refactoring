@@ -26,7 +26,9 @@ public class Scorecard {
     nextFrame();
     current = (Bowler)Bowlers.next();
   }
-
+  public int getBowlerScoreForFrame(Bowler bowler, int frame) {
+    return scorecard.get(bowler.getFullName()).getFrameScore(frame);
+  }
   public int getCurrentBowlerScore(){
     return scorecard.get(current.getFullName()).getTotalScore();
   }
@@ -61,7 +63,6 @@ public class Scorecard {
   public void addScore(int score){
     Scores s = scorecard.get(current.getFullName());
     s.addScore(frame, score);
-    update();
   }
 
   public void update(){
@@ -75,6 +76,10 @@ public class Scorecard {
       index = 0;
     }
 
+  }
+
+  public Iterator getBowlers() {
+    return Bowlers;
   }
 
   public void nextFrame(){

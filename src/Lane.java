@@ -174,7 +174,6 @@ public class Lane extends Thread implements PinsetterObserver {
 
 		gameIsHalted = false;
 		partyAssigned = false;
-
 		gameNumber = 0;
 
 		setter.subscribe( this );

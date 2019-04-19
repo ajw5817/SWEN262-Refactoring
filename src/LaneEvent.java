@@ -104,5 +104,8 @@ public class LaneEvent {
 		return bowler;
 	}
 
+	public Scorecard getScorecard() {
+		return scorecard;
+	}
 };
  
