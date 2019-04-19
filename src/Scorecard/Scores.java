@@ -14,12 +14,12 @@ public class Scores {
   }
 
   public void addScore(int frame, int score){
-    frames.get(frame-1).addScore(score);
+    frames.get(frame).addScore(score);
   }
 
   public int getFrameScore(int frame){
     ScoreStrategy scoreStrategy;
-    FrameState fs = frames.get(frame-1).getState();
+    FrameState fs = frames.get(frame).getState();
     if(fs.getClass() == new Strike().getClass()){
       scoreStrategy = new ScoreStrike();
     }
@@ -29,7 +29,7 @@ public class Scores {
     else{
       scoreStrategy = new Scored();
     }
-    return scoreStrategy.getScore(frames, frame-1);
+    return scoreStrategy.getScore(frames, frame);
   }
 
   public int getTotalScore(){
