@@ -11,14 +11,12 @@ public class Scorecard {
   private int frame;
   private Iterator Bowlers;
   private Party party;
-  private int index;
   private Bowler current;
 
   public Scorecard(Party party){
     this.scorecard = new HashMap<>();
     this.Bowlers = party.getMembers().iterator();
     frame = 0;
-    this.index = 0;
     while(Bowlers.hasNext()){
       Bowler b = (Bowler)Bowlers.next();
       scorecard.put(b.getFullName(), new Scores(b.getFullName()));
@@ -39,12 +37,12 @@ public class Scorecard {
   public int getCurrentBowlerScore(){
     return scorecard.get(current.getFullName()).getTotalScore();
   }
+
+  public int getCertainBowlerScore(String fullName){
+    return scorecard.get(fullName).getTotalScore();
+  }
   public Bowler getCurrentBowler(){
     return current;
-  }
-
-  public int getCurrentIndex(){
-    return index;
   }
 
   public int getCurrentFrame(){
@@ -59,7 +57,6 @@ public class Scorecard {
   public void reset(){
     scorecard.clear();
     frame = 0;
-    index = 0;
     Bowlers = party.getMembers().iterator();
     while(Bowlers.hasNext()){
       Bowler b = (Bowler)Bowlers.next();
@@ -77,12 +74,10 @@ public class Scorecard {
   public void update(){
     if(scorecard.get(current.getFullName()).thruFrame() == frame && Bowlers.hasNext() && frame <= 10){
       current = (Bowler)Bowlers.next();
-      index++;
     }
     else if(!Bowlers.hasNext() && frame < 10){
       nextFrame();
       current = (Bowler)Bowlers.next();
-      index = 0;
     }
 
   }
@@ -100,7 +95,7 @@ public class Scorecard {
     return Bowlers.hasNext();
   }
 
-  private String getNameatIndex(int index){
+  public String getNameatIndex(int index){
     int i = 0;
     Iterator<Bowler> j = party.getMembers().iterator();
     String name = " ";

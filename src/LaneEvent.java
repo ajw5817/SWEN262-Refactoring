@@ -73,7 +73,7 @@ public class LaneEvent {
 	}*/
 
 	public boolean isFirstIndex() {
-		return scorecard.getCurrentIndex() == 0;
+		return scorecard.getCurrentBowler().getFullName().equals(scorecard.getNameatIndex(0));
 	}
 
 	/*public int[] getCurScores(){
