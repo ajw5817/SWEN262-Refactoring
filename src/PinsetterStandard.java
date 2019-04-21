@@ -30,10 +30,11 @@ public class PinsetterStandard implements Pinsetter{
      * @pre none
      * @post all subscribers have recieved pinsetter event with updated state
      * */
-    private void sendEvent(int jdpins) {	// send events when our state is changd
+    private void sendEvent(int jdpins) {	// send events when our state is changed
+        pinsDownThrow = jdpins;
         for (int i=0; i < subscribers.size(); i++) {
             ((PinsetterObserver)subscribers.get(i)).receivePinsetterEvent(
-                    new PinsetterEvent(pins, foul, throwNumber, jdpins));
+                    new PinsetterEvent(pins,foul,throwNumber,pinsDownThrow,this));
         }
     }
 
@@ -149,6 +150,7 @@ public class PinsetterStandard implements Pinsetter{
     public boolean getTenthFrameStrike(){
         return false;
     }
+
 
     /** subscribe()
      *

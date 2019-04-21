@@ -19,6 +19,8 @@ public class PinsetterEvent {
 	private int throwNumber;
 	private int pinsDownThisThrow;
 
+	private Pinsetter pinsetter;
+
 	/** PinsetterEvent()
 	 * 
 	 * creates a new pinsetter event
@@ -26,7 +28,9 @@ public class PinsetterEvent {
 	 * @pre none
 	 * @post the object has been initialized
 	 */
-	public PinsetterEvent(Pin[] ps, boolean foul, int tn, int pinsDownThisThrow) {
+	public PinsetterEvent(Pin[] ps, boolean foul, int tn, int pinsDownThisThrow, Pinsetter p) {
+
+		pinsetter = p;
 		pinsStillStanding = new Pin[10];
 
 		for (int i=0; i <= 9; i++) {
@@ -36,6 +40,10 @@ public class PinsetterEvent {
 		foulCommited = foul;
 		throwNumber = tn;
 		this.pinsDownThisThrow = pinsDownThisThrow;
+	}
+
+	public Pinsetter getPinsetter(){
+		return pinsetter;
 	}
 
 	/** pinKnockedDown()

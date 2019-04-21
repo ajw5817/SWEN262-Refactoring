@@ -232,8 +232,18 @@ public class Lane extends Thread implements PinsetterObserver {
 						gameFinished = true;
 						gameNumber++;
 					}
+
+					//new code, add in for new functionality
+//					if(frameNumber == 9){
+//						setter = new PinsetterFrameTen();
+//					}
+
 				}
 			} else if (partyAssigned && gameFinished) {
+
+				//new code, add in for new functionality
+				//setter = new PinsetterStandard();
+
 				EndGamePrompt egp = new EndGamePrompt( ((Bowler) party.getMembers().get(0)).getNickName() + "'s Party" );
 				int result = egp.getResult();
 				egp.distroy();
@@ -286,11 +296,6 @@ public class Lane extends Thread implements PinsetterObserver {
 	 * Replaces the functionality of receivePinsetterEvent
 	 */
 	public void handleThrow(){
-		//change setter type at frame 10
-		if(frameNumber == 9){
-			setter = new PinsetterFrameTen();
-		}
-
 		setter.handleThrow(canThrowAgain, tenthFrameStrike);
 		canThrowAgain = setter.getCanThrowAgain();
 		tenthFrameStrike = setter.getTenthFrameStrike();
@@ -307,6 +312,11 @@ public class Lane extends Thread implements PinsetterObserver {
 	 */
 	public void receivePinsetterEvent(PinsetterEvent pe) {
 
+		//these 2 lines are the new method, remove everything else
+//		setter = pe.getPinsetter();
+//		handleThrow();
+
+
 		int pinsDownThrow = pe.pinsDownOnThisThrow();
 		int pinsDownTotal = pe.totalPinsDown();
 		int throwNum = pe.getThrowNumber();
@@ -317,7 +327,6 @@ public class Lane extends Thread implements PinsetterObserver {
 			// next logic handles the ?: what conditions dont allow them another throw?
 			// handle the case of 10th frame first
 
-			//TODO create pinsetter for frame < 10 and frame 10
 			// 10th frame setter
 			if (frameNumber == 9) {
 				if (pinsDownTotal == 10) {
@@ -350,6 +359,7 @@ public class Lane extends Thread implements PinsetterObserver {
 			}
 		} else {								//  this is not a real throw, probably a reset
 		}
+
 	}
 	
 	/** resetBowlerIterator()
