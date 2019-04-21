@@ -124,7 +124,6 @@ public class AddPartyView implements ActionListener, ListSelectionListener {
 		for (String s: buttonText) {
 			JButton b = new JButton(s);
 			JPanel panel = new JPanel();
-			panel.setLayout(new FlowLayout());
 			b.addActionListener(this);
 			panel.add(b);
 			buttonPanel.add(panel);
