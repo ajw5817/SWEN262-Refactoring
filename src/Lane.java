@@ -242,6 +242,7 @@ public class Lane extends Thread implements PinsetterObserver {
 				/*resetScores();
 				resetBowlerIterator();*/
 					scorecard.reset();
+					gameFinished = false;
 				} else if (result == 2) {// no, dont want to play another game
 					Vector printVector;
 					EndGameReport egr = new EndGameReport(((Bowler) party.getMembers().get(0)).getNickName() + "'s Party", party);
