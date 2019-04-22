@@ -28,17 +28,18 @@ import java.util.HashMap;
 public class LaneEvent {
 
 	private Party p;
-	int frame;
-	int ball;
-	Bowler bowler;
-	int[][] cumulScore;
-	HashMap score;
-	int index;
-	int frameNum;
-	int[] curScores;
-	boolean mechProb;
+	private int ball;
+	private Bowler bowler;
+	//private int[][] cumulScore;
+	//private HashMap score;
+	//private int index;
+	private int frameNum;
+	//private int[] curScores;
+	private boolean mechProb;
+
+	private Scorecard scorecard;
 	
-	public LaneEvent( Party pty, int theIndex, Bowler theBowler, int[][] theCumulScore, HashMap theScore, int theFrameNum, int[] theCurScores, int theBall, boolean mechProblem) {
+	/*public LaneEvent( Party pty, int theIndex, Bowler theBowler, int[][] theCumulScore, HashMap theScore, int theFrameNum, int[] theCurScores, int theBall, boolean mechProblem) {
 		p = pty;
 		index = theIndex;
 		bowler = theBowler;
@@ -48,6 +49,15 @@ public class LaneEvent {
 		frameNum = theFrameNum;
 		ball = theBall;	
 		mechProb = mechProblem;
+	}*/
+
+	public LaneEvent (Party party, Bowler bowler, Scorecard scorecard, int ball, boolean mechProblem) {
+		this.p = party;
+		this.bowler = bowler;
+		this.scorecard = scorecard;
+		this.frameNum = scorecard.getCurrentFrame();
+		this.ball = ball;
+		this.mechProb = mechProblem;
 	}
 	
 	public boolean isMechanicalProblem() {
@@ -58,30 +68,33 @@ public class LaneEvent {
 		return frameNum;
 	}
 	
-	public HashMap getScore( ) {
+	/*public HashMap getScore( ) {
 		return score;
+	}*/
+
+	public boolean isFirstIndex() {
+		return scorecard.getCurrentBowler().getFullName().equals(scorecard.getNameatIndex(0));
 	}
 
-
-	public int[] getCurScores(){ 
+	/*public int[] getCurScores(){
 		return curScores;
-	}
+	}*/
 	
-	public int getIndex() {
+	/*public int getIndex() {
 		return index;
-	}
+	}*/
 
-	public int getFrame( ) {
+	/*public int getFrame( ) {
 		return frame;
-	}
+	}*/
 
 	public int getBall( ) {
 		return ball;
 	}
 	
-	public int[][] getCumulScore(){
+	/*public int[][] getCumulScore(){
 		return cumulScore;
-	}
+	}*/
 
 	public Party getParty() {
 		return p;
@@ -91,5 +104,8 @@ public class LaneEvent {
 		return bowler;
 	}
 
+	public Scorecard getScorecard() {
+		return scorecard;
+	}
 };
  

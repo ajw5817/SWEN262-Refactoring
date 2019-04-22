@@ -7,6 +7,7 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 import java.util.*;
+import Scorecard.Frame;
 
 public class LaneView implements LaneObserver, ActionListener {
 
@@ -135,7 +136,7 @@ public class LaneView implements LaneObserver, ActionListener {
 
 			if (le.getFrameNum() == 1
 				&& le.getBall() == 0
-				&& le.getIndex() == 0) {
+				&& le.isFirstIndex()) {
 				System.out.println("Making the frame.");
 				cpanel.removeAll();
 				cpanel.add(makeFrame(le.getParty()), "Center");
@@ -160,40 +161,55 @@ public class LaneView implements LaneObserver, ActionListener {
 
 			}
 
-			int[][] lescores = le.getCumulScore();
+			//int[][] lescores = le.getCumulScore();
+			Scorecard scorecard = le.getScorecard();
+			String[][] scorecardAssembled = scorecard.assembleFrames();
 			for (int k = 0; k < numBowlers; k++) {
-				for (int i = 0; i <= le.getFrameNum() - 1; i++) {
-					if (lescores[k][i] != 0)
-						scoreLabel[k][i].setText(
-							(new Integer(lescores[k][i])).toString());
+				for (int i = 0; i <= le.getFrameNum()-1; i++) {
+						scoreLabel[k][i].setText(Integer.toString(scorecard.getBowlerScoreCum((Bowler)bowlers.get(k), i)));
 				}
 				for (int i = 0; i < 21; i++) {
-					if (((int[]) ((HashMap) le.getScore())
-						.get(bowlers.get(k)))[i]
+					/*
+					if (scorecard.getBowlerScoreForFrame((Bowler)bowlers.get(k), i)
 						!= -1)
-						if (((int[]) ((HashMap) le.getScore())
-							.get(bowlers.get(k)))[i]
+						if (scorecard.getBowlerScoreForFrame((Bowler)bowlers.get(k), i)
 							== 10
 							&& (i % 2 == 0 || i == 19))
 							ballLabel[k][i].setText("X");
 						else if (
 							i > 0
-								&& ((int[]) ((HashMap) le.getScore())
-									.get(bowlers.get(k)))[i]
-									+ ((int[]) ((HashMap) le.getScore())
-										.get(bowlers.get(k)))[i
-									- 1]
+								&& scorecard.getBowlerScoreForFrame((Bowler)bowlers.get(k), i)
+									+ scorecard.getBowlerScoreForFrame((Bowler)bowlers.get(k), i)
 									== 10
 								&& i % 2 == 1)
 							ballLabel[k][i].setText("/");
-						else if ( ((int[])((HashMap) le.getScore()).get(bowlers.get(k)))[i] == -2 ){
+						else if ( scorecard.getBowlerScoreForFrame((Bowler)bowlers.get(k), i) == -2 ){
 							
 							ballLabel[k][i].setText("F");
 						} else
 							ballLabel[k][i].setText(
-								(new Integer(((int[]) ((HashMap) le.getScore())
-									.get(bowlers.get(k)))[i]))
-									.toString());
+								(Integer.toString(scorecard.getBowlerScoreForFrame((Bowler)bowlers.get(k), i))));
+								*/
+					/*
+					Frame score = scorecard.getPlayerFrame((Bowler)bowlers.get(k), i);
+					if(score.getFirstShot() == -2){
+						ballLabel[k][j].setText("F");
+						ballLabel[k][j+1].setText("F");
+					}
+					else if(score.getFirstShot() == 10){
+						ballLabel[k][j].setText("X");
+					}
+					else if(score.getfirstTwo() == 10){
+						ballLabel[k][j].setText(Integer.toString(score.getFirstShot()));
+						ballLabel[k][j+1].setText("/");
+					}
+					else{
+						ballLabel[k][j].setText(Integer.toString(score.getFirstShot()));
+						ballLabel[k][j+1].setText(Integer.toString(score.getfirstTwo()-score.getFirstShot()));
+					}
+					j+=2;
+					*/
+					ballLabel[k][i].setText(scorecardAssembled[k][i]);
 				}
 			}
 
