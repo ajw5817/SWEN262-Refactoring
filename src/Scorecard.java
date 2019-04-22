@@ -75,7 +75,7 @@ public class Scorecard {
     if(scorecard.get(current.getFullName()).thruFrame() == frame && Bowlers.hasNext() && frame <= 10){
       current = (Bowler)Bowlers.next();
     }
-    else if(!Bowlers.hasNext() && frame < 10){
+    else if(!Bowlers.hasNext() && frame < 10 && current.getFullName().equals(getNameatIndex(party.getMembers().size()-1))){
       nextFrame();
       current = (Bowler)Bowlers.next();
     }
@@ -92,6 +92,9 @@ public class Scorecard {
   }
 
   public boolean hasNext(){
+    if (current.getFullName().equals(getNameatIndex(party.getMembers().size()-1))) {
+      return true;
+    }
     return Bowlers.hasNext();
   }
 

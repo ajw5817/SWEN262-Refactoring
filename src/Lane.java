@@ -198,41 +198,37 @@ public class Lane extends Thread implements PinsetterObserver {
 					} catch (Exception e) {
 					}
 				}
-				if (scorecard.hasNext()) {
-					currentThrower = scorecard.getCurrentBowler();
+				currentThrower = scorecard.getCurrentBowler();
 
-					canThrowAgain = true;
-					tenthFrameStrike = false;
-					ball = 0;
-					while (canThrowAgain) {
-						setter.ballThrown();        // simulate the thrower's ball hiting
-						ball++;
-					}
+				canThrowAgain = true;
+				tenthFrameStrike = false;
+				ball = 0;
+				while (canThrowAgain) {
+					setter.ballThrown();        // simulate the thrower's ball hiting
+					ball++;
+				}
 					
-					/*if (frameNumber == 9){
-						//finalScores[bowlIndex][gameNumber] = cumulScores[bowlIndex][9];
-                        finalScores[bowlIndex][gameNumber] = scorecard.getCurrentBowlerScore();
-						try{
-						Date date = new Date();
-						String dateString = "" + date.getHours() + ":" + date.getMinutes() + " " + date.getMonth() + "/" + date.getDay() + "/" + (date.getYear() + 1900);
-						ScoreHistoryFile.addScore(currentThrower.getNick(), dateString, new Integer(finalScores[bowlIndex][gameNumber]).toString());
-						} catch (Exception e) {System.err.println("Exception in addScore. "+ e );} 
-					}*/
+				/*if (scorecard.getCurrentFrame() == 9){
+				//finalScores[bowlIndex][gameNumber] = cumulScores[bowlIndex][9];
+                    finalScores[scorecard.get][gameNumber] = scorecard.getCurrentBowlerScore();
+					try{
+					Date date = new Date();
+					String dateString = "" + date.getHours() + ":" + date.getMinutes() + " " + date.getMonth() + "/" + date.getDay() + "/" + (date.getYear() + 1900);
+					ScoreHistoryFile.addScore(currentThrower.getNick(), dateString, new Integer(finalScores[bowlIndex][gameNumber]).toString());
+					} catch (Exception e) {System.err.println("Exception in addScore. "+ e );}
+				}*/
 
 
-					setter.reset();
-					scorecard.update();
-					//bowlIndex++;
+				setter.reset();
+				scorecard.update();
+				//bowlIndex++;
 
-				} else {
-					//frameNumber++;
-					//resetBowlerIterator();
-					scorecard.update();
-					//bowlIndex = 0;
-					if (scorecard.getCurrentFrame() > 9) {
-						gameFinished = true;
-						gameNumber++;
-					}
+				//frameNumber++;
+				//resetBowlerIterator();
+				//bowlIndex = 0;
+				if (scorecard.getCurrentFrame() > 9) {
+					gameFinished = true;
+					gameNumber++;
 				}
 			} else if (partyAssigned && gameFinished) {
 				EndGamePrompt egp = new EndGamePrompt(((Bowler) party.getMembers().get(0)).getNickName() + "'s Party");
