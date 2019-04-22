@@ -226,7 +226,7 @@ public class Lane extends Thread implements PinsetterObserver {
 				//frameNumber++;
 				//resetBowlerIterator();
 				//bowlIndex = 0;
-				if (scorecard.getCurrentFrame() > 9) {
+				if (scorecard.getCurrentFrame() > 10) {
 					gameFinished = true;
 					gameNumber++;
 				}
@@ -294,7 +294,7 @@ public class Lane extends Thread implements PinsetterObserver {
 	
 				// next logic handles the ?: what conditions dont allow them another throw?
 				// handle the case of 10th frame first
-				if (scorecard.getCurrentFrame() == 9) {
+				if (scorecard.getCurrentFrame() == 10) {
 					if (pe.totalPinsDown() == 10) {
 						setter.resetPins();
 						if(pe.getThrowNumber() == 1) {

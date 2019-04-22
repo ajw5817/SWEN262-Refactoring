@@ -7,7 +7,7 @@ public class FrameTenSecondShotStrike implements FrameState{
   }
   @Override
   public String[] assemble(Frame frame) {
-    String[] assembled = new String[2];
+    String[] assembled = new String[3];
     assembled[0] = "X";
     assembled[1] = " ";
     assembled[2] = " ";

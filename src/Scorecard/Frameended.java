@@ -15,9 +15,29 @@ public class Frameended implements FrameState {
     }
     else{
       assembled = new String[3];
-      assembled[0] = Integer.toString(frame.getFirstShot());
-      assembled[1] = Integer.toString(frame.getfirstTwo()-frame.getFirstShot());
-      assembled[2] = Integer.toString(frame.getFrameScore()-frame.getfirstTwo());
+      if(frame.getFirstShot() == 10) {
+        assembled[0] = "X";
+        if(frame.getfirstTwo() == 20){
+          assembled[1] = "X";
+          if(frame.getFrameScore() == 30){
+            assembled[2] = "X";
+          }
+        }
+
+      }
+      else if(frame.getfirstTwo() == 10) {
+        assembled[0] = Integer.toString(frame.getFirstShot());
+        assembled[1] = "/";
+        assembled[2] = Integer.toString(frame.getFrameScore()-frame.getfirstTwo());
+      }
+      else{
+        assembled[0] = Integer.toString(frame.getFirstShot());
+        assembled[1] = Integer.toString(frame.getfirstTwo() - frame.getFirstShot());
+        assembled[2] = Integer.toString(frame.getFrameScore()-frame.getfirstTwo());
+      }
+      if(frame.getFrameScore()-frame.getfirstTwo() == 10){
+        assembled[2] = "X";
+      }
     }
     return assembled;
   }
