@@ -2,78 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="97a036c1-8d44-4843-b1b8-9cfbdcd6df3b" name="Default Changelist" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/RefactoringProject/AddPartyView.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/RefactoringProject/Alley.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/RefactoringProject/Bowler.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/RefactoringProject/BowlerFile.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/RefactoringProject/ControlDesk.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/RefactoringProject/ControlDeskEvent.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/RefactoringProject/ControlDeskObserver.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/RefactoringProject/ControlDeskView$1.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/RefactoringProject/ControlDeskView.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/RefactoringProject/EndGamePrompt.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/RefactoringProject/EndGameReport.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/RefactoringProject/Lane.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/RefactoringProject/LaneEvent.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/RefactoringProject/LaneEventInterface.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/RefactoringProject/LaneObserver.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/RefactoringProject/LaneServer.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/RefactoringProject/LaneStatusView.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/RefactoringProject/LaneView$1.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/RefactoringProject/LaneView.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/RefactoringProject/NewPatronView.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/RefactoringProject/Party.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/RefactoringProject/PinSetterView.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/RefactoringProject/Pinsetter.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/RefactoringProject/PinsetterEvent.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/RefactoringProject/PinsetterObserver.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/RefactoringProject/PrintableText.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/RefactoringProject/Queue.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/RefactoringProject/Score.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/RefactoringProject/ScoreHistoryFile.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/RefactoringProject/ScoreReport.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/RefactoringProject/Scorecard.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/RefactoringProject/Scorecard/Frame.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/RefactoringProject/Scorecard/FrameOneToNineFirstShot.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/RefactoringProject/Scorecard/FrameOneToNineSecondShot.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/RefactoringProject/Scorecard/FrameState.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/RefactoringProject/Scorecard/FrameTenFirstShot.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/RefactoringProject/Scorecard/FrameTenSecondShot.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/RefactoringProject/Scorecard/FrameTenSecondShotStrike.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/RefactoringProject/Scorecard/FrameTenThirdShot.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/RefactoringProject/Scorecard/Frameended.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/RefactoringProject/Scorecard/ScoreSpare.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/RefactoringProject/Scorecard/ScoreStrategy.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/RefactoringProject/Scorecard/ScoreStrike.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/RefactoringProject/Scorecard/Scored.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/RefactoringProject/Scorecard/Scores.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/RefactoringProject/Scorecard/Spare.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/RefactoringProject/Scorecard/Strike.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/RefactoringProject/drive.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Scorecard.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Scorecard/Frame.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Scorecard/FrameOneToNineFirstShot.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Scorecard/FrameOneToNineSecondShot.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Scorecard/FrameState.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Scorecard/FrameTenFirstShot.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Scorecard/FrameTenSecondShot.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Scorecard/FrameTenSecondShotStrike.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Scorecard/FrameTenThirdShot.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Scorecard/Frameended.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Scorecard/ScoreSpare.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Scorecard/ScoreStrategy.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Scorecard/ScoreStrike.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Scorecard/Scored.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Scorecard/Scores.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Scorecard/Spare.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Scorecard/Strike.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/out/production/RefactoringProject/Lane.class" afterPath="$PROJECT_DIR$/out/production/RefactoringProject/Lane.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/RefactoringProject/Scorecard.class" afterPath="$PROJECT_DIR$/out/production/RefactoringProject/Scorecard.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/RefactoringProject/Scorecard/Frame.class" afterPath="$PROJECT_DIR$/out/production/RefactoringProject/Scorecard/Frame.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/RefactoringProject/Scorecard/FrameOneToNineFirstShot.class" afterPath="$PROJECT_DIR$/out/production/RefactoringProject/Scorecard/FrameOneToNineFirstShot.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/RefactoringProject/Scorecard/FrameOneToNineSecondShot.class" afterPath="$PROJECT_DIR$/out/production/RefactoringProject/Scorecard/FrameOneToNineSecondShot.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/RefactoringProject/Scorecard/FrameState.class" afterPath="$PROJECT_DIR$/out/production/RefactoringProject/Scorecard/FrameState.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/RefactoringProject/Scorecard/FrameTenFirstShot.class" afterPath="$PROJECT_DIR$/out/production/RefactoringProject/Scorecard/FrameTenFirstShot.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/RefactoringProject/Scorecard/FrameTenSecondShot.class" afterPath="$PROJECT_DIR$/out/production/RefactoringProject/Scorecard/FrameTenSecondShot.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/RefactoringProject/Scorecard/FrameTenSecondShotStrike.class" afterPath="$PROJECT_DIR$/out/production/RefactoringProject/Scorecard/FrameTenSecondShotStrike.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/RefactoringProject/Scorecard/FrameTenThirdShot.class" afterPath="$PROJECT_DIR$/out/production/RefactoringProject/Scorecard/FrameTenThirdShot.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/RefactoringProject/Scorecard/Frameended.class" afterPath="$PROJECT_DIR$/out/production/RefactoringProject/Scorecard/Frameended.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/RefactoringProject/Scorecard/Scores.class" afterPath="$PROJECT_DIR$/out/production/RefactoringProject/Scorecard/Scores.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/RefactoringProject/Scorecard/Spare.class" afterPath="$PROJECT_DIR$/out/production/RefactoringProject/Scorecard/Spare.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/RefactoringProject/Scorecard/Strike.class" afterPath="$PROJECT_DIR$/out/production/RefactoringProject/Scorecard/Strike.class" />
       <change beforePath="$PROJECT_DIR$/src/Lane.java" afterPath="$PROJECT_DIR$/src/Lane.java" />
-      <change beforePath="$PROJECT_DIR$/src/LaneEvent.java" afterPath="$PROJECT_DIR$/src/LaneEvent.java" />
-      <change beforePath="$PROJECT_DIR$/src/LaneView.java" afterPath="$PROJECT_DIR$/src/LaneView.java" />
-      <change beforePath="$PROJECT_DIR$/src/ScoreReport.java" afterPath="$PROJECT_DIR$/src/ScoreReport.java" />
+      <change beforePath="$PROJECT_DIR$/src/Scorecard.java" afterPath="$PROJECT_DIR$/src/Scorecard.java" />
+      <change beforePath="$PROJECT_DIR$/src/Scorecard/Frame.java" afterPath="$PROJECT_DIR$/src/Scorecard/Frame.java" />
+      <change beforePath="$PROJECT_DIR$/src/Scorecard/FrameOneToNineFirstShot.java" afterPath="$PROJECT_DIR$/src/Scorecard/FrameOneToNineFirstShot.java" />
+      <change beforePath="$PROJECT_DIR$/src/Scorecard/FrameOneToNineSecondShot.java" afterPath="$PROJECT_DIR$/src/Scorecard/FrameOneToNineSecondShot.java" />
+      <change beforePath="$PROJECT_DIR$/src/Scorecard/FrameState.java" afterPath="$PROJECT_DIR$/src/Scorecard/FrameState.java" />
+      <change beforePath="$PROJECT_DIR$/src/Scorecard/FrameTenFirstShot.java" afterPath="$PROJECT_DIR$/src/Scorecard/FrameTenFirstShot.java" />
+      <change beforePath="$PROJECT_DIR$/src/Scorecard/FrameTenSecondShot.java" afterPath="$PROJECT_DIR$/src/Scorecard/FrameTenSecondShot.java" />
+      <change beforePath="$PROJECT_DIR$/src/Scorecard/FrameTenSecondShotStrike.java" afterPath="$PROJECT_DIR$/src/Scorecard/FrameTenSecondShotStrike.java" />
+      <change beforePath="$PROJECT_DIR$/src/Scorecard/FrameTenThirdShot.java" afterPath="$PROJECT_DIR$/src/Scorecard/FrameTenThirdShot.java" />
+      <change beforePath="$PROJECT_DIR$/src/Scorecard/Frameended.java" afterPath="$PROJECT_DIR$/src/Scorecard/Frameended.java" />
+      <change beforePath="$PROJECT_DIR$/src/Scorecard/Scores.java" afterPath="$PROJECT_DIR$/src/Scorecard/Scores.java" />
+      <change beforePath="$PROJECT_DIR$/src/Scorecard/Spare.java" afterPath="$PROJECT_DIR$/src/Scorecard/Spare.java" />
+      <change beforePath="$PROJECT_DIR$/src/Scorecard/Strike.java" afterPath="$PROJECT_DIR$/src/Scorecard/Strike.java" />
     </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,51 +44,142 @@
     <session id="996883245">
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="25" />
+          <entry key="java" value="55" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="25" />
+          <entry key="JAVA" value="55" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="2782" />
+          <entry key="java" value="3739" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2782" />
+          <entry key="JAVA" value="3739" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.opened" value="1" />
         </counts>
       </usages-collector>
     </session>
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="SWEN262-Refactoring" />
+  </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="Lane.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Lane.java">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Scorecard.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Scorecard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="226" column="40" lean-forward="true" selection-start-line="226" selection-start-column="40" selection-end-line="226" selection-end-column="40" />
+            <state relative-caret-position="1235">
+              <caret line="77" column="42" lean-forward="false" selection-start-line="77" selection-start-column="42" selection-end-line="77" selection-end-column="42" />
               <folding>
-                <element signature="e#14562#14563#0" expanded="true" />
-                <element signature="e#14589#14590#0" expanded="true" />
-                <element signature="e#14710#14711#0" expanded="true" />
-                <element signature="e#14736#14737#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Pinsetter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Pinsetter.java">
+      <file leaf-file-name="Frameended.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Scorecard/Frameended.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
+            <state relative-caret-position="646">
+              <caret line="34" column="83" lean-forward="false" selection-start-line="34" selection-start-column="83" selection-end-line="34" selection-end-column="83" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FrameTenSecondShotStrike.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Scorecard/FrameTenSecondShotStrike.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Scores.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Scorecard/Scores.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1121">
+              <caret line="59" column="23" lean-forward="false" selection-start-line="59" selection-start-column="23" selection-end-line="59" selection-end-column="23" />
+              <folding>
+                <element signature="e#354#355#0" expanded="true" />
+                <element signature="e#399#400#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Spare.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Scorecard/Spare.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="12" column="1" lean-forward="false" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="drive.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/drive.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
               <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FrameTenThirdShot.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Scorecard/FrameTenThirdShot.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="16" column="82" lean-forward="false" selection-start-line="16" selection-start-column="82" selection-end-line="16" selection-end-column="82" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Lane.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Lane.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1862">
+              <caret line="228" column="0" lean-forward="false" selection-start-line="228" selection-start-column="0" selection-end-line="228" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ScoreHistoryFile.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ScoreHistoryFile.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="76">
+              <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LaneView.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/LaneView.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2945">
+              <caret line="166" column="0" lean-forward="false" selection-start-line="166" selection-start-column="0" selection-end-line="166" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -138,17 +189,32 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/drive.java" />
         <option value="$PROJECT_DIR$/src/ScoreReport.java" />
-        <option value="$PROJECT_DIR$/src/Scorecard/Frame.java" />
         <option value="$PROJECT_DIR$/src/Scorecard/Scored.java" />
-        <option value="$PROJECT_DIR$/src/Scorecard.java" />
         <option value="$PROJECT_DIR$/src/LaneView.java" />
+        <option value="$PROJECT_DIR$/src/Scorecard/FrameState.java" />
+        <option value="$PROJECT_DIR$/src/Scorecard/Strike.java" />
+        <option value="$PROJECT_DIR$/src/Scorecard/Frame.java" />
+        <option value="$PROJECT_DIR$/src/Scorecard/FrameOneToNineFirstShot.java" />
+        <option value="$PROJECT_DIR$/src/Scorecard/FrameOneToNineSecondShot.java" />
+        <option value="$PROJECT_DIR$/src/Scorecard/FrameTenFirstShot.java" />
+        <option value="$PROJECT_DIR$/src/Scorecard/FrameTenSecondShot.java" />
+        <option value="$PROJECT_DIR$/src/Scorecard/FrameTenThirdShot.java" />
+        <option value="$PROJECT_DIR$/src/Scorecard/Spare.java" />
         <option value="$PROJECT_DIR$/src/Scorecard/Scores.java" />
         <option value="$PROJECT_DIR$/src/Lane.java" />
+        <option value="$PROJECT_DIR$/src/Scorecard.java" />
+        <option value="$PROJECT_DIR$/src/Scorecard/Frameended.java" />
+        <option value="$PROJECT_DIR$/src/Scorecard/FrameTenSecondShotStrike.java" />
       </list>
     </option>
   </component>
@@ -179,7 +245,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -208,11 +273,14 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555939251483" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555948105787" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -258,71 +326,60 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="ed9e7707-af4c-404b-916c-a9dfa9cf05c3" name="Default Changelist" comment="" />
+      <changelist id="97a036c1-8d44-4843-b1b8-9cfbdcd6df3b" name="Default Changelist" comment="" />
       <created>1555449874293</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1555449874293</updated>
-      <workItem from="1555449875539" duration="17619000" />
+      <workItem from="1555449875539" duration="17956000" />
+      <workItem from="1555940576060" duration="3168000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13540000" />
+    <option name="totallyTimeSpent" value="17045000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32752994" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297062" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3297062" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39934713" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41349292" sideWeight="0.5007153" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36626506" sideWeight="0.49928468" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32752994" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25586355" sideWeight="0.4989339" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41445783" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41445783" sideWeight="0.49928468" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26359516" sideWeight="0.5010661" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Metrics" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.213253" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32771084" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36626506" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Sequence" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32771084" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24964234" sideWeight="0.4989339" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Sequence" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26359516" sideWeight="0.5010661" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="pin setter merged with scorecard" />
-    <option name="LAST_COMMIT_MESSAGE" value="pin setter merged with scorecard" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -481,23 +538,109 @@
           <url>file://$PROJECT_DIR$/src/Lane.java</url>
           <line>228</line>
           <properties />
+          <option name="timeStamp" value="168" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Lane.java</url>
+          <line>229</line>
+          <properties />
+          <option name="timeStamp" value="169" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Lane.java</url>
+          <line>230</line>
+          <properties />
+          <option name="timeStamp" value="172" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="1" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/Scorecard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1235">
+          <caret line="77" column="42" lean-forward="false" selection-start-line="77" selection-start-column="42" selection-end-line="77" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Scorecard/Frameended.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="34" column="83" lean-forward="false" selection-start-line="34" selection-start-column="83" selection-end-line="34" selection-end-column="83" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Scorecard/Scores.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1121">
+          <caret line="59" column="23" lean-forward="false" selection-start-line="59" selection-start-column="23" selection-end-line="59" selection-end-column="23" />
+          <folding>
+            <element signature="e#354#355#0" expanded="true" />
+            <element signature="e#399#400#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Scorecard/Spare.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/drive.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Scorecard/FrameTenThirdShot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="82" lean-forward="false" selection-start-line="16" selection-start-column="82" selection-end-line="16" selection-end-column="82" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Lane.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="138" column="13" lean-forward="false" selection-start-line="138" selection-start-column="13" selection-end-line="138" selection-end-column="13" />
+        <state relative-caret-position="1862">
+          <caret line="228" column="0" lean-forward="false" selection-start-line="228" selection-start-column="0" selection-end-line="228" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ScoreHistoryFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LaneView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2945">
+          <caret line="166" column="0" lean-forward="false" selection-start-line="166" selection-start-column="0" selection-end-line="166" selection-end-column="0" />
           <folding>
-            <element signature="e#14562#14563#0" expanded="true" />
-            <element signature="e#14589#14590#0" expanded="true" />
-            <element signature="e#14710#14711#0" expanded="true" />
-            <element signature="e#14736#14737#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Scorecard/FrameTenSecondShotStrike.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="37" lean-forward="false" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -534,7 +677,7 @@
         <state relative-caret-position="180">
           <caret line="17" column="4" lean-forward="true" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
           <folding>
-            <element signature="n#!!doc" expanded="false" />
+            <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -570,99 +713,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Scorecard/FrameOneToNineFirstShot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Score.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Scorecard/Strike.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Scorecard/Spare.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Scorecard/Frame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="53" column="4" lean-forward="false" selection-start-line="53" selection-start-column="4" selection-end-line="53" selection-end-column="23" />
-          <folding>
-            <element signature="e#479#480#0" expanded="true" />
-            <element signature="e#515#516#0" expanded="true" />
-            <element signature="e#557#558#0" expanded="true" />
-            <element signature="e#588#589#0" expanded="true" />
-            <element signature="e#765#766#0" expanded="true" />
-            <element signature="e#816#817#0" expanded="true" />
-            <element signature="e#845#846#0" expanded="true" />
-            <element signature="e#871#872#0" expanded="true" />
-            <element signature="e#899#900#0" expanded="true" />
-            <element signature="e#938#939#0" expanded="true" />
-            <element signature="e#1047#1048#0" expanded="true" />
-            <element signature="e#1069#1070#0" expanded="true" />
-            <element signature="e#1102#1103#0" expanded="true" />
-            <element signature="e#1130#1131#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Scorecard/FrameTenFirstShot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Scorecard/FrameTenSecondShot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Scorecard/Scored.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Scorecard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1860">
-          <caret line="134" column="0" lean-forward="false" selection-start-line="134" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Scorecard/Scores.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1537">
-          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding>
-            <element signature="e#354#355#0" expanded="true" />
-            <element signature="e#397#398#0" expanded="true" />
-            <element signature="e#1674#1675#0" expanded="true" />
-            <element signature="e#1696#1697#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -673,26 +727,113 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/drive.java">
+    <entry file="file://$PROJECT_DIR$/src/Pinsetter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="8" column="33" lean-forward="true" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
+        <state relative-caret-position="465">
+          <caret line="102" column="0" lean-forward="false" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Scorecard/FrameState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Scorecard/Strike.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Scorecard/Frame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="44" column="0" lean-forward="true" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Scorecard/FrameOneToNineFirstShot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Scorecard/FrameOneToNineSecondShot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="3" lean-forward="true" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Scorecard/FrameTenFirstShot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="38" lean-forward="false" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Scorecard/FrameTenSecondShot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="3" lean-forward="true" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Scorecard/Scored.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="3" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+          <folding>
+            <element signature="e#166#167#0" expanded="true" />
+            <element signature="e#218#219#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Scorecard/FrameTenThirdShot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="82" lean-forward="false" selection-start-line="16" selection-start-column="82" selection-end-line="16" selection-end-column="82" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Scorecard/Spare.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="1" lean-forward="false" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/LaneView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
+        <state relative-caret-position="2945">
           <caret line="166" column="0" lean-forward="false" selection-start-line="166" selection-start-column="0" selection-end-line="166" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="false" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Pinsetter.java">
+    <entry file="file://$PROJECT_DIR$/src/Scorecard/Scores.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
+        <state relative-caret-position="1121">
+          <caret line="59" column="23" lean-forward="false" selection-start-line="59" selection-start-column="23" selection-end-line="59" selection-end-column="23" />
+          <folding>
+            <element signature="e#354#355#0" expanded="true" />
+            <element signature="e#399#400#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/drive.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
           <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
         </state>
@@ -700,14 +841,43 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Lane.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="226" column="40" lean-forward="true" selection-start-line="226" selection-start-column="40" selection-end-line="226" selection-end-column="40" />
+        <state relative-caret-position="1862">
+          <caret line="228" column="0" lean-forward="false" selection-start-line="228" selection-start-column="0" selection-end-line="228" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ScoreHistoryFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Scorecard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1235">
+          <caret line="77" column="42" lean-forward="false" selection-start-line="77" selection-start-column="42" selection-end-line="77" selection-end-column="42" />
           <folding>
-            <element signature="e#14562#14563#0" expanded="true" />
-            <element signature="e#14589#14590#0" expanded="true" />
-            <element signature="e#14710#14711#0" expanded="true" />
-            <element signature="e#14736#14737#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Scorecard/Frameended.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="34" column="83" lean-forward="false" selection-start-line="34" selection-start-column="83" selection-end-line="34" selection-end-column="83" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Scorecard/FrameTenSecondShotStrike.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -751,7 +921,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>9.0</last-edited>
+          <last-edited>9</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

@@ -57,7 +57,7 @@ public class Scores {
     int score = 0;
     ScoreStrategy scoreStrategy;
     for(Frame f: frames){
-      if(i == frame){
+      if(i == frame + 1){
         break;
       }
       FrameState fs = f.getState();
@@ -89,14 +89,17 @@ public class Scores {
   public Frame getFrame(int frame){
     return frames.get(frame);
   }
+  /*
 
   public String[] assembleFrame(){
     String[] framed = new String[21];
     int j = 0;
     for(Frame f: frames){
       if(f.getState().getClass() == new Strike().getClass()){
-        framed[j] = "X";
-        framed[j+1] = " ";
+        //framed[j] = "X";
+        //framed[j+1] = " ";
+        framed[j] = f.assemble()[0];
+        framed[j+1] = f.assemble()[1];
       }
       else if(f.getState().getClass() == new Spare().getClass()){
         framed[j] = Integer.toString(f.getFirstShot());
@@ -142,4 +145,18 @@ public class Scores {
     }
     return framed;
   }
+  */
+  public String[] assembleFrame(){
+    String[] framed = new String[21];
+    int j = 0;
+    for(Frame f: frames){
+      String[] assembled = f.assemble();
+      for(int i = 0; i < assembled.length; i++){
+        framed[j] = assembled[i];
+        j++;
+      }
+    }
+    return framed;
+  }
+
 }

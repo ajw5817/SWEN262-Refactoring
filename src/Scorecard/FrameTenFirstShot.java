@@ -10,4 +10,12 @@ public class FrameTenFirstShot implements FrameState {
       frame.updateState(new FrameTenSecondShot());
     }
   }
+  @Override
+  public String[] assemble(Frame frame) {
+    String[] assembled = new String[3];
+    assembled[0] = " ";
+    assembled[1] = " ";
+    assembled[2] = " ";
+    return assembled;
+  }
 }
