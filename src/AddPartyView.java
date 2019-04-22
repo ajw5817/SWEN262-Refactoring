@@ -41,10 +41,15 @@ import java.text.*;
 
 public class AddPartyView implements ActionListener, ListSelectionListener {
 
+	private final String ADD_PARTY_TEXT = "Add to Party";
+	private final String REMOVE_PARTY_TEXT = "Remove Member";
+	private final String NEW_PATRON_TEXT = "New Patron";
+	private final String FINISHED_TEXT = "Finished";
+
+
 	private int maxSize;
 
 	private JFrame win;
-	private JButton addPatron, newPatron, remPatron, finished;
 	private JList partyList, allBowlers;
 	private Vector party, bowlerdb;
 	private Integer lock;
@@ -106,36 +111,23 @@ public class AddPartyView implements ActionListener, ListSelectionListener {
 		JPanel buttonPanel = new JPanel();
 		buttonPanel.setLayout(new GridLayout(4, 1));
 
-		Insets buttonMargin = new Insets(4, 4, 4, 4);
+		//the strings for buttons we will make, in order they will be added
+		ArrayList<String> buttonText = new ArrayList<>(Arrays.asList(
+				ADD_PARTY_TEXT,
+				REMOVE_PARTY_TEXT,
+				NEW_PATRON_TEXT,
+				FINISHED_TEXT
+		));
 
-		addPatron = new JButton("Add to Party");
-		JPanel addPatronPanel = new JPanel();
-		addPatronPanel.setLayout(new FlowLayout());
-		addPatron.addActionListener(this);
-		addPatronPanel.add(addPatron);
-
-		remPatron = new JButton("Remove Member");
-		JPanel remPatronPanel = new JPanel();
-		remPatronPanel.setLayout(new FlowLayout());
-		remPatron.addActionListener(this);
-		remPatronPanel.add(remPatron);
-
-		newPatron = new JButton("New Patron");
-		JPanel newPatronPanel = new JPanel();
-		newPatronPanel.setLayout(new FlowLayout());
-		newPatron.addActionListener(this);
-		newPatronPanel.add(newPatron);
-
-		finished = new JButton("Finished");
-		JPanel finishedPanel = new JPanel();
-		finishedPanel.setLayout(new FlowLayout());
-		finished.addActionListener(this);
-		finishedPanel.add(finished);
-
-		buttonPanel.add(addPatronPanel);
-		buttonPanel.add(remPatronPanel);
-		buttonPanel.add(newPatronPanel);
-		buttonPanel.add(finishedPanel);
+		// create new buttons for all strings
+		// add the buttons to the button panel
+		for (String s: buttonText) {
+			JButton b = new JButton(s);
+			JPanel panel = new JPanel();
+			b.addActionListener(this);
+			panel.add(b);
+			buttonPanel.add(panel);
+		}
 
 		// Clean up main panel
 		colPanel.add(partyPanel);
@@ -156,35 +148,53 @@ public class AddPartyView implements ActionListener, ListSelectionListener {
 	}
 
 	public void actionPerformed(ActionEvent e) {
-		if (e.getSource().equals(addPatron)) {
-			if (selectedNick != null && party.size() < maxSize) {
-				if (party.contains(selectedNick)) {
-					System.err.println("Member already in Party");
-				} else {
-					party.add(selectedNick);
-					partyList.setListData(party);
-				}
-			}
-		}
-		if (e.getSource().equals(remPatron)) {
-			if (selectedMember != null) {
-				party.removeElement(selectedMember);
-				partyList.setListData(party);
-			}
-		}
-		if (e.getSource().equals(newPatron)) {
-			NewPatronView newPatron = new NewPatronView( this );
-		}
-		if (e.getSource().equals(finished)) {
-			if ( party != null && party.size() > 0) {
-				controlDesk.updateAddParty( this );
-			}
-			win.hide();
+		// get the source of the event and cast it to a button
+		JButton buttonClicked = (JButton) e.getSource();
+
+		// switch on the text to do the appropriate button action
+		switch (buttonClicked.getText()) {
+			case ADD_PARTY_TEXT:
+				addPatronAction();
+				break;
+			case REMOVE_PARTY_TEXT:
+				remPatronAction();
+				break;
+			case NEW_PATRON_TEXT:
+				new NewPatronView( this );
+				break;
+			case FINISHED_TEXT:
+				finishedAction();
+				break;
 		}
 
 	}
 
-/**
+	private void finishedAction() {
+		if ( party != null && party.size() > 0) {
+			controlDesk.updateAddParty( this );
+		}
+		win.hide();
+	}
+
+	private void remPatronAction() {
+		if (selectedMember != null) {
+			party.removeElement(selectedMember);
+			partyList.setListData(party);
+		}
+	}
+
+	private void addPatronAction() {
+		if (selectedNick != null && party.size() < maxSize) {
+			if (party.contains(selectedNick)) {
+				System.err.println("Member already in Party");
+			} else {
+				party.add(selectedNick);
+				partyList.setListData(party);
+			}
+		}
+	}
+
+	/**
  * Handler for List actions
  * @param e the ListActionEvent that triggered the handler
  */
