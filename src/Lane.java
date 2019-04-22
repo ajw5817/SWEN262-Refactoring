@@ -233,6 +233,7 @@ public class Lane extends Thread implements PinsetterObserver {
 
 				if(scorecard.getCurrentFrame() == 11){
 					setter = new PinsetterFrameTen();
+					setter.subscribe( this );
 				}
 			} else if (partyAssigned && gameFinished) {
 				EndGamePrompt egp = new EndGamePrompt(((Bowler) party.getMembers().get(0)).getNickName() + "'s Party");
@@ -247,6 +248,8 @@ public class Lane extends Thread implements PinsetterObserver {
 				resetBowlerIterator();*/
 					scorecard.reset();
 					gameFinished = false;
+					setter = new PinsetterStandard();
+					setter.subscribe( this );
 				} else if (result == 2) {// no, dont want to play another game
 					Vector printVector;
 					EndGameReport egr = new EndGameReport(((Bowler) party.getMembers().get(0)).getNickName() + "'s Party", party);
@@ -393,7 +396,7 @@ public class Lane extends Thread implements PinsetterObserver {
 	 * 
 	 * @return		The new lane event
 	 */
-	private LaneEvent lanePublish(  ) {
+	private LaneEvent lanePublish() {
 		//LaneEvent laneEvent = new LaneEvent(party, bowlIndex, currentThrower, cumulScores, scores, frameNumber+1, curScores, ball, gameIsHalted);
 		return new LaneEvent(party, currentThrower, scorecard, ball, gameIsHalted);
 	}
