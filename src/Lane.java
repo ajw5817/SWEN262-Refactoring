@@ -231,7 +231,7 @@ public class Lane extends Thread implements PinsetterObserver {
 					gameNumber++;
 				}
 
-				if(scorecard.getCurrentFrame() == 11){
+				if(scorecard.getCurrentFrame() == 10){
 					setter = new PinsetterFrameTen();
 					setter.subscribe( this );
 				}
