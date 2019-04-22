@@ -168,7 +168,7 @@ public class Lane extends Thread implements PinsetterObserver {
 	 * @post a new lane has been created and its thered is executing
 	 */
 	public Lane() { 
-		setter = new Pinsetter();
+		setter = new PinsetterStandard();
 		//scores = new HashMap();
 		subscribers = new Vector();
 
@@ -231,7 +231,7 @@ public class Lane extends Thread implements PinsetterObserver {
 					gameNumber++;
 				}
 
-                if(scorecard.getCurrentFrame() == 9){
+                if(scorecard.getCurrentFrame() == 10){
                     setter = new PinsetterFrameTen();
                 }
 			} else if (partyAssigned && gameFinished) {
