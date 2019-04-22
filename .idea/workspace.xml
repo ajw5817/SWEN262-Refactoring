@@ -1,11 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="97a036c1-8d44-4843-b1b8-9cfbdcd6df3b" name="Default Changelist" comment="">
+    <list default="true" id="b430e11b-72fa-4e80-93de-377e2f749ba8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/DownPin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Pin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PinsetterFrameTen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PinsetterStandard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UpPin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RefactoringProject/AddPartyView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RefactoringProject/AddPartyView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RefactoringProject/Alley.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RefactoringProject/Alley.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RefactoringProject/Bowler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RefactoringProject/Bowler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RefactoringProject/BowlerFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RefactoringProject/BowlerFile.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RefactoringProject/ControlDesk.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RefactoringProject/ControlDesk.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RefactoringProject/ControlDeskEvent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RefactoringProject/ControlDeskEvent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RefactoringProject/ControlDeskObserver.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RefactoringProject/ControlDeskObserver.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RefactoringProject/ControlDeskView$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RefactoringProject/ControlDeskView$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RefactoringProject/ControlDeskView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RefactoringProject/ControlDeskView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RefactoringProject/EndGamePrompt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RefactoringProject/EndGamePrompt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RefactoringProject/EndGameReport.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RefactoringProject/EndGameReport.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RefactoringProject/LaneEvent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RefactoringProject/LaneEvent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RefactoringProject/LaneEventInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RefactoringProject/LaneEventInterface.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RefactoringProject/LaneObserver.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RefactoringProject/LaneObserver.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RefactoringProject/LaneServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RefactoringProject/LaneServer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RefactoringProject/LaneStatusView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RefactoringProject/LaneStatusView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RefactoringProject/LaneView$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RefactoringProject/LaneView$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RefactoringProject/LaneView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RefactoringProject/LaneView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RefactoringProject/NewPatronView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RefactoringProject/NewPatronView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RefactoringProject/Party.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RefactoringProject/Party.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RefactoringProject/PinSetterView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RefactoringProject/PinSetterView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RefactoringProject/Pinsetter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RefactoringProject/Pinsetter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RefactoringProject/PinsetterEvent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RefactoringProject/PinsetterEvent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RefactoringProject/PinsetterObserver.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RefactoringProject/PinsetterObserver.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RefactoringProject/PrintableText.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RefactoringProject/PrintableText.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RefactoringProject/Queue.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RefactoringProject/Queue.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RefactoringProject/Score.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RefactoringProject/Score.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RefactoringProject/ScoreHistoryFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RefactoringProject/ScoreHistoryFile.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RefactoringProject/ScoreReport.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RefactoringProject/ScoreReport.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RefactoringProject/Scorecard/ScoreSpare.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RefactoringProject/Scorecard/ScoreSpare.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RefactoringProject/Scorecard/ScoreStrategy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RefactoringProject/Scorecard/ScoreStrategy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RefactoringProject/Scorecard/ScoreStrike.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RefactoringProject/Scorecard/ScoreStrike.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RefactoringProject/Scorecard/Scored.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RefactoringProject/Scorecard/Scored.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RefactoringProject/drive.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RefactoringProject/drive.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Lane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pinsetter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pinsetter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PinsetterEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PinsetterEvent.java" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,13 +57,13 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="java" value="55" />
-          <entry key="xml" value="1" />
+          <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="JAVA" value="55" />
-          <entry key="XML" value="1" />
+          <entry key="XML" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -110,15 +151,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Scorecard/FrameTenThirdShot.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="16" column="82" selection-start-line="16" selection-start-column="82" selection-end-line="16" selection-end-column="82" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Lane.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="302">
@@ -153,39 +185,11 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/drive.java" />
-        <option value="$PROJECT_DIR$/src/ScoreReport.java" />
-        <option value="$PROJECT_DIR$/src/Scorecard/Scored.java" />
-        <option value="$PROJECT_DIR$/src/LaneView.java" />
-        <option value="$PROJECT_DIR$/src/Scorecard/FrameState.java" />
-        <option value="$PROJECT_DIR$/src/Scorecard/Strike.java" />
-        <option value="$PROJECT_DIR$/src/Scorecard/Frame.java" />
-        <option value="$PROJECT_DIR$/src/Scorecard/FrameOneToNineFirstShot.java" />
-        <option value="$PROJECT_DIR$/src/Scorecard/FrameOneToNineSecondShot.java" />
-        <option value="$PROJECT_DIR$/src/Scorecard/FrameTenFirstShot.java" />
-        <option value="$PROJECT_DIR$/src/Scorecard/FrameTenSecondShot.java" />
-        <option value="$PROJECT_DIR$/src/Scorecard/FrameTenThirdShot.java" />
-        <option value="$PROJECT_DIR$/src/Scorecard/Spare.java" />
-        <option value="$PROJECT_DIR$/src/Scorecard/Scores.java" />
-        <option value="$PROJECT_DIR$/src/Lane.java" />
-        <option value="$PROJECT_DIR$/src/Scorecard.java" />
-        <option value="$PROJECT_DIR$/src/Scorecard/FrameTenSecondShotStrike.java" />
-        <option value="$PROJECT_DIR$/src/Scorecard/Frameended.java" />
-      </list>
-    </option>
-  </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
-  </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1440" />
-    <option name="height" value="900" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -224,14 +228,6 @@
       <pane id="PackagesPane" />
     </panes>
   </component>
-  <component name="PropertiesComponent">
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555948166879" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.0" />
-  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -269,17 +265,17 @@
       <option name="presentableId" value="Default" />
       <updated>1555449874293</updated>
       <workItem from="1555449875539" duration="17956000" />
-      <workItem from="1555940576060" duration="3383000" />
+      <workItem from="1555940576060" duration="3518000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17260000" />
+    <option name="totallyTimeSpent" value="17395000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4989339" visible="true" weight="0.2532189" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4989339" visible="true" weight="0.2532189" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -296,7 +292,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32771084" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32771084" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5007153" side_tool="true" weight="0.41445783" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32771084" />
       <window_info anchor="bottom" id="Sequence" order="12" />
@@ -311,185 +307,8 @@
       <window_info anchor="right" id="Palette&#9;" order="8" />
     </layout>
   </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
-  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/LaneView.java</url>
-          <line>188</line>
-          <properties />
-          <option name="timeStamp" value="94" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Scorecard/Scores.java</url>
-          <line>20</line>
-          <properties />
-          <option name="timeStamp" value="95" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Scorecard/Scores.java</url>
-          <line>21</line>
-          <properties />
-          <option name="timeStamp" value="97" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Scorecard/Scores.java</url>
-          <line>22</line>
-          <properties />
-          <option name="timeStamp" value="98" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Scorecard/Scores.java</url>
-          <line>23</line>
-          <properties />
-          <option name="timeStamp" value="99" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Scorecard/Scores.java</url>
-          <line>26</line>
-          <properties />
-          <option name="timeStamp" value="100" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Scorecard/Scores.java</url>
-          <line>25</line>
-          <properties />
-          <option name="timeStamp" value="101" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Scorecard/Scores.java</url>
-          <line>24</line>
-          <properties />
-          <option name="timeStamp" value="102" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Scorecard/Scores.java</url>
-          <line>28</line>
-          <properties />
-          <option name="timeStamp" value="103" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Scorecard/Scores.java</url>
-          <line>27</line>
-          <properties />
-          <option name="timeStamp" value="104" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Scorecard/Scores.java</url>
-          <line>30</line>
-          <properties />
-          <option name="timeStamp" value="105" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Scorecard/Scores.java</url>
-          <line>32</line>
-          <properties />
-          <option name="timeStamp" value="106" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Scorecard/Scores.java</url>
-          <line>31</line>
-          <properties />
-          <option name="timeStamp" value="107" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Scorecard/Scores.java</url>
-          <line>29</line>
-          <properties />
-          <option name="timeStamp" value="108" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Scorecard.java</url>
-          <line>128</line>
-          <properties />
-          <option name="timeStamp" value="152" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Scorecard.java</url>
-          <line>129</line>
-          <properties />
-          <option name="timeStamp" value="153" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Scorecard.java</url>
-          <line>132</line>
-          <properties />
-          <option name="timeStamp" value="154" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Scorecard.java</url>
-          <line>130</line>
-          <properties />
-          <option name="timeStamp" value="155" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Scorecard.java</url>
-          <line>131</line>
-          <properties />
-          <option name="timeStamp" value="156" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Scorecard.java</url>
-          <line>135</line>
-          <properties />
-          <option name="timeStamp" value="158" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Scorecard.java</url>
-          <line>133</line>
-          <properties />
-          <option name="timeStamp" value="160" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Scorecard.java</url>
-          <line>134</line>
-          <properties />
-          <option name="timeStamp" value="161" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Scorecard.java</url>
-          <line>136</line>
-          <properties />
-          <option name="timeStamp" value="162" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Scorecard.java</url>
-          <line>137</line>
-          <properties />
-          <option name="timeStamp" value="163" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Scorecard.java</url>
-          <line>138</line>
-          <properties />
-          <option name="timeStamp" value="164" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Lane.java</url>
-          <line>228</line>
-          <properties />
-          <option name="timeStamp" value="168" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Lane.java</url>
-          <line>229</line>
-          <properties />
-          <option name="timeStamp" value="169" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Lane.java</url>
-          <line>230</line>
-          <properties />
-          <option name="timeStamp" value="172" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/EndGameReport.java">
@@ -527,13 +346,6 @@
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="35" selection-start-column="35" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -733,6 +545,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="35" selection-start-column="35" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Scorecard/Frameended.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
@@ -740,79 +559,5 @@
         </state>
       </provider>
     </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>No facets are configured</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>9</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>RefactoringProject</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>
