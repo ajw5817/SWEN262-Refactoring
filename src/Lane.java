@@ -234,15 +234,15 @@ public class Lane extends Thread implements PinsetterObserver {
 					}
 
 					//new code, add in for new functionality
-//					if(frameNumber == 9){
-//						setter = new PinsetterFrameTen();
-//					}
+					if(frameNumber == 9){
+						setter = new PinsetterFrameTen();
+					}
 
 				}
 			} else if (partyAssigned && gameFinished) {
 
 				//new code, add in for new functionality
-				//setter = new PinsetterStandard();
+				setter = new PinsetterStandard();
 
 				EndGamePrompt egp = new EndGamePrompt( ((Bowler) party.getMembers().get(0)).getNickName() + "'s Party" );
 				int result = egp.getResult();
@@ -313,52 +313,53 @@ public class Lane extends Thread implements PinsetterObserver {
 	public void receivePinsetterEvent(PinsetterEvent pe) {
 
 		//these 2 lines are the new method, remove everything else
-//		setter = pe.getPinsetter();
-//		handleThrow();
+		setter = pe.getPinsetter();
+		handleThrow();
+		markScore(currentThrower, frameNumber + 1, pe.getThrowNumber(), pe.pinsDownOnThisThrow());
 
 
-		int pinsDownThrow = pe.pinsDownOnThisThrow();
-		int pinsDownTotal = pe.totalPinsDown();
-		int throwNum = pe.getThrowNumber();
-
-		if (pinsDownThrow >=  0) {			// this is a real throw
-			markScore(currentThrower, frameNumber + 1, pe.getThrowNumber(), pe.pinsDownOnThisThrow());
-
-			// next logic handles the ?: what conditions dont allow them another throw?
-			// handle the case of 10th frame first
-
-			// 10th frame setter
-			if (frameNumber == 9) {
-				if (pinsDownTotal == 10) {
-					setter.resetPins();
-					if(throwNum == 1) {
-						tenthFrameStrike = true;
-					}
-				}
-
-				if ((pinsDownTotal != 10) && (pe.getThrowNumber() == 2 && tenthFrameStrike == false)) {
-					canThrowAgain = false;
-					//publish( lanePublish() );
-				}
-
-				if (throwNum == 3) {
-					canThrowAgain = false;
-					//publish( lanePublish() );
-				}
-			//normal setter
-			} else { // its not the 10th frame
-
-				if (pinsDownThrow == 10) {		// threw a strike
-					canThrowAgain = false;
-					//publish( lanePublish() );
-				} else if (throwNum == 2) {
-					canThrowAgain = false;
-					//publish( lanePublish() );
-				} else if (throwNum == 3)
-					System.out.println("I'm here...");
-			}
-		} else {								//  this is not a real throw, probably a reset
-		}
+//		int pinsDownThrow = pe.pinsDownOnThisThrow();
+//		int pinsDownTotal = pe.totalPinsDown();
+//		int throwNum = pe.getThrowNumber();
+//
+//		if (pinsDownThrow >=  0) {			// this is a real throw
+//			markScore(currentThrower, frameNumber + 1, pe.getThrowNumber(), pe.pinsDownOnThisThrow());
+//
+//			// next logic handles the ?: what conditions dont allow them another throw?
+//			// handle the case of 10th frame first
+//
+//			// 10th frame setter
+//			if (frameNumber == 9) {
+//				if (pinsDownTotal == 10) {
+//					setter.resetPins();
+//					if(throwNum == 1) {
+//						tenthFrameStrike = true;
+//					}
+//				}
+//
+//				if ((pinsDownTotal != 10) && (pe.getThrowNumber() == 2 && tenthFrameStrike == false)) {
+//					canThrowAgain = false;
+//					//publish( lanePublish() );
+//				}
+//
+//				if (throwNum == 3) {
+//					canThrowAgain = false;
+//					//publish( lanePublish() );
+//				}
+//			//normal setter
+//			} else { // its not the 10th frame
+//
+//				if (pinsDownThrow == 10) {		// threw a strike
+//					canThrowAgain = false;
+//					//publish( lanePublish() );
+//				} else if (throwNum == 2) {
+//					canThrowAgain = false;
+//					//publish( lanePublish() );
+//				} else if (throwNum == 3)
+//					System.out.println("I'm here...");
+//			}
+//		} else {								//  this is not a real throw, probably a reset
+//		}
 
 	}
 	
