@@ -57,7 +57,7 @@ public class Scores {
     int score = 0;
     ScoreStrategy scoreStrategy;
     for(Frame f: frames){
-      if(i == frame){
+      if(i == frame + 1){
         break;
       }
       FrameState fs = f.getState();
