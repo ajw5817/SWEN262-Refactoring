@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="97a036c1-8d44-4843-b1b8-9cfbdcd6df3b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Lane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lane.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Scorecard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Scorecard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Scorecard/FrameTenSecondShotStrike.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Scorecard/FrameTenSecondShotStrike.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Scorecard/Frameended.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Scorecard/Frameended.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,12 +27,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="3739" />
+          <entry key="java" value="3747" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3739" />
+          <entry key="JAVA" value="3747" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
@@ -64,16 +60,16 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Scorecard/Frameended.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="284">
-              <caret line="34" column="83" selection-start-line="34" selection-start-column="83" selection-end-line="34" selection-end-column="83" />
+            <state relative-caret-position="450">
+              <caret line="30" column="83" selection-start-line="30" selection-start-column="83" selection-end-line="30" selection-end-column="83" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Scorecard/FrameTenSecondShotStrike.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="135">
@@ -176,8 +172,8 @@
         <option value="$PROJECT_DIR$/src/Scorecard/Scores.java" />
         <option value="$PROJECT_DIR$/src/Lane.java" />
         <option value="$PROJECT_DIR$/src/Scorecard.java" />
-        <option value="$PROJECT_DIR$/src/Scorecard/Frameended.java" />
         <option value="$PROJECT_DIR$/src/Scorecard/FrameTenSecondShotStrike.java" />
+        <option value="$PROJECT_DIR$/src/Scorecard/Frameended.java" />
       </list>
     </option>
   </component>
@@ -231,7 +227,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555948105787" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555948166879" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -273,16 +269,15 @@
       <option name="presentableId" value="Default" />
       <updated>1555449874293</updated>
       <workItem from="1555449875539" duration="17956000" />
-      <workItem from="1555940576060" duration="3168000" />
+      <workItem from="1555940576060" duration="3383000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17045000" />
+    <option name="totallyTimeSpent" value="17260000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4989339" visible="true" weight="0.2532189" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -294,14 +289,14 @@
       <window_info anchor="bottom" id="Metrics" weight="0.213253" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32891566" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49928468" visible="true" weight="0.36626506" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49928468" weight="0.36626506" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49928468" weight="0.41445783" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32771084" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32771084" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5007153" side_tool="true" weight="0.41445783" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32771084" />
       <window_info anchor="bottom" id="Sequence" order="12" />
@@ -731,17 +726,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Scorecard/Frameended.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="34" column="83" selection-start-line="34" selection-start-column="83" selection-end-line="34" selection-end-column="83" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Scorecard/FrameTenSecondShotStrike.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="37" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Scorecard/Frameended.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="83" selection-start-line="30" selection-start-column="83" selection-end-line="30" selection-end-column="83" />
         </state>
       </provider>
     </entry>
