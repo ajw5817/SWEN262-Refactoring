@@ -53,4 +53,7 @@ public class Frame {
   public int getFrameNumber() {
     return frameNumber;
   }
+  public String[] assemble(){
+    return state.assemble(this);
+  }
 }
